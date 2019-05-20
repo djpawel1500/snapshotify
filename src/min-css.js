@@ -9,9 +9,10 @@ const extractStyles = page => page.evaluate(() => {
 
 const getMinimalSelectors = async (page, selectors) => {
   return page.evaluate(selectors => {
+    console.log(selectors);
     return selectors
-      //.map(s => s.replace(/::.*/i, ''))   // ::before, etc
-      .filter(s => document.querySelector(s.replace(/::.*/i, '')));
+      .map(s => s.replace(/::.*/i, ''))   // ::before, etc
+      .filter(s => s !== '' && document.querySelector(s));
   }, selectors);
 };
 
