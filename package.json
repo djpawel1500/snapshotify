@@ -3,7 +3,7 @@
   "version": "0.7.0",
   "description": "Creates a static HTML snapshot for your `create-react-app` app, to improve initial page load times.",
   "homepage": "https://github.com/errorception/snapshotify",
-  "repository": "github:errorception/snapshotify",
+  "repository": "https://github.com/djpawel1500/snapshotify.git",
   "main": "build/load-scripts.js",
   "scripts": {
     "test": "mocha",
